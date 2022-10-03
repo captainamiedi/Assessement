@@ -1,0 +1,51 @@
+$media-desktop: "only screen and (max-width : 1024px)";
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+
+.main_container {
+    background-color: #F2F2F2;
+}
+
+.container {
+    padding: 100px 160px 106px 170px;
+
+    @media #{$media-mobile} {
+        padding: 5.625rem 2.875rem;;
+    }
+    @media #{$media-tablet} {
+        padding: 5.625rem 2.875rem;;
+    }
+}
+
+.sub_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$media-mobile} {
+        flex-direction: column-reverse;
+    }
+    @media #{$media-tablet} {
+        flex-direction: column-reverse;
+    }
+}
+
+.image_container {
+    width: 440px;
+    height: 550.69px;
+
+    @media #{$media-mobile} {
+        width: 165.63px;
+        height: 292px;
+    }
+}
+
+.btn_event {
+    display: none;
+    @media #{$media-mobile} {
+        display: block;
+        padding: 2.125rem 0px 0.854rem 0px;
+    }
+}

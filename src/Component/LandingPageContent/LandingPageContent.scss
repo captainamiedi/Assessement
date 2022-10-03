@@ -1,0 +1,82 @@
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$media-mobile-sm: "only screen and (max-width : 480px)";
+
+.text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    // line-height: 64px;
+    /* or 100% */
+
+    text-align: right;
+
+    color: #240D57;
+
+    @media #{$media-mobile} {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+
+.content_main {
+    text-align: right;
+    max-width: 37.5rem;
+
+    @media #{$media-mobile} {
+        text-align: center;
+    }
+}
+
+.snap_text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    /* identical to box height */
+
+    text-align: right;
+
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    @media #{$media-mobile} {
+        font-size: 36px;
+        line-height: 41px;
+    }
+}
+
+.main_sub {
+    padding-bottom: 16px;
+}
+
+.content_main>p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+
+    color: '#4F4F4F';
+    max-width: 35.12rem;
+    padding-bottom: 3.25rem;
+
+    @media #{$media-mobile} {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+.btn_event_content {
+    display: block;
+    @media #{$media-mobile} {
+        display: none;
+    }
+}
