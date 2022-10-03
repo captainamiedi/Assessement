@@ -13,7 +13,7 @@ export const RouteComponent = () => {
             {/* <Switch> */}
                 <Route exact path='/' element={<LandingPage />} />
                 <Route path='/event' element={<Event />} />
-                <Route path='/create' element={<Event />}/>
+                <Route path='/create' element={<CreateEvent />}/>
             {/* </Switch> */}
         </Routes>
         </BrowserRouter>

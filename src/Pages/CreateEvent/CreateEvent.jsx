@@ -1,10 +1,10 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 import './createEvent.scss'
 
 export default function CreateEvent() {
 
-    const history = useHistory()
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -14,10 +14,7 @@ export default function CreateEvent() {
         for (let [key, value] of data.entries()) {
             inputData[key] = value
           }
-          history.push({
-            pathname: 'event',
-            state: inputData
-          })
+          navigate('/event')
           console.log(inputData, 'input');
     }
   return (
